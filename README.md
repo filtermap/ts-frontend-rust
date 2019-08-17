@@ -1,4 +1,4 @@
-# ts-frontend
+# ts-frontend-rust
 
 ## install
 
@@ -6,12 +6,19 @@
 git clone <repository> <dir>
 cd <dir>
 yarn
+rustup component add rustfmt
 ```
 
 ## develop
 
 ```sh
 yarn dev
+```
+
+## format
+
+```sh
+yarn format
 ```
 
 ## type check
@@ -28,7 +35,7 @@ yarn lint
 
 ## test
 
-Only node-like environment is available.
+Only node-like environment is available for TypeScript.
 
 ```sh
 yarn test

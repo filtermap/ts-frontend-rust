@@ -1,14 +1,17 @@
 {
-  "name": "ts-frontend",
+  "name": "ts-frontend-rust",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "parcel serve src/index.html --open",
+    "format": "cargo fmt",
     "type-check": "tsc --noEmit",
     "lint": "eslint --ext .js,.ts,.tsx .",
-    "test": "jest",
+    "test": "run-s test:*",
+    "test:rust": "cargo test",
+    "test:typescript": "jest",
     "build": "parcel build src/index.html --public-url .",
-    "predeploy": "run-s type-check lint test build",
+    "predeploy": "run-s format type-check lint test build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
