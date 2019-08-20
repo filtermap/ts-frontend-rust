@@ -1888,7 +1888,7 @@ combined-stream@^1.0.6, combined-stream@~1.0.6:
   dependencies:
     delayed-stream "~1.0.0"
 
-command-exists@^1.2.6:
+command-exists@^1.2.6, command-exists@^1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.8.tgz#715acefdd1223b9c9b37110a149c6392c2852291"
   integrity sha512-PM54PkseWbiiD/mMsbvW351/u+dafwTJ0ye2qB60G1aGQP9j3xK2gmMDc+R34L3nDtx4qMCitXT75mkbkGJDLw==
@@ -5287,6 +5287,14 @@ parcel-bundler@^1.12.3:
     terser "^3.7.3"
     v8-compile-cache "^2.0.0"
     ws "^5.1.1"
+
+parcel-plugin-wasm.rs@^1.2.12:
+  version "1.2.12"
+  resolved "https://registry.yarnpkg.com/parcel-plugin-wasm.rs/-/parcel-plugin-wasm.rs-1.2.12.tgz#b13d97d8cf09d2b2267842c5b0b23b55459e2307"
+  integrity sha512-Yp+v5QaatcY9uD0LlpAlni9LWxyv2MnECuUdvIv1wDPT6m/81BGqAPl9/8SCBoUjwZm0za1gkrXPrI9o/49Yjg==
+  dependencies:
+    "@iarna/toml" "^2.2.0"
+    command-exists "^1.2.7"
 
 parent-module@^1.0.0:
   version "1.0.1"

@@ -7,6 +7,7 @@ git clone <repository> <dir>
 cd <dir>
 yarn
 rustup component add rustfmt
+cargo install wasm-pack
 ```
 
 ## develop
@@ -26,6 +27,8 @@ yarn format
 ```sh
 yarn type-check
 ```
+
+Type check fails before build.
 
 ## lint
 
