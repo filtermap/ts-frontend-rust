@@ -6,7 +6,7 @@
     "dev": "parcel serve src/index.html --open",
     "format": "cargo fmt",
     "type-check": "tsc --noEmit",
-    "lint": "eslint --ext .js,.ts,.tsx .",
+    "lint": "eslint --ext .js,.ts,.tsx --ignore-path .gitignore .",
     "test": "run-s test:*",
     "test:rust": "cargo test",
     "test:typescript": "jest",
