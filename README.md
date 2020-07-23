@@ -7,6 +7,7 @@ git clone <repository> <dir>
 cd <dir>
 yarn
 rustup component add rustfmt
+cargo install wasm-bindgen-cli
 cargo install wasm-pack
 ```
 
